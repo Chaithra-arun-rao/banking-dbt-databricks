@@ -1,0 +1,83 @@
+version: 2
+
+models:
+
+  - name: dim_customers
+    description: "One record per banking customer."
+
+    columns:
+
+      - name: customer_id
+        data_tests:
+          - unique
+          - not_null
+
+
+  - name: dim_accounts
+    description: "Bank account dimension enriched with branch information."
+
+    columns:
+
+      - name: account_id
+        data_tests:
+          - unique
+          - not_null
+
+      - name: customer_id
+        data_tests:
+          - not_null
+
+
+  - name: fct_transactions
+    description: "One record per banking transaction."
+
+    columns:
+
+      - name: transaction_id
+        data_tests:
+          - unique
+          - not_null
+
+      - name: customer_id
+        data_tests:
+          - not_null
+
+      - name: account_id
+        data_tests:
+          - not_null
+
+      - name: amount
+        data_tests:
+          - not_null
+
+
+  - name: fct_loans
+    description: "One record per customer loan."
+
+    columns:
+
+      - name: loan_id
+        data_tests:
+          - unique
+          - not_null
+
+      - name: customer_id
+        data_tests:
+          - not_null
+
+
+  - name: customer_360
+    description: >
+      Customer-level mart combining banking accounts,
+      transactions, balances, loans and demo risk indicators.
+
+    columns:
+
+      - name: customer_id
+        data_tests:
+          - unique
+          - not_null
+
+      - name: risk_rating
+        data_tests:
+          - not_null
