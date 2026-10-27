@@ -1,0 +1,7 @@
+customer_id,first_name,last_name,date_of_birth,city,state,country,customer_since,risk_rating
+C001,Aarav,Sharma,1988-04-12,Bengaluru,Karnataka,India,2021-01-15,LOW
+C002,Ananya,Rao,1992-09-03,Mysuru,Karnataka,India,2022-06-11,MEDIUM
+C003,Rohan,Mehta,1985-12-19,Mumbai,Maharashtra,India,2020-03-20,LOW
+C004,Isha,Nair,1995-07-28,Kochi,Kerala,India,2023-02-01,HIGH
+C005,Vikram,Singh,1979-11-06,Delhi,Delhi,India,2019-09-09,MEDIUM
+C006,Meera,Patel,1990-02-14,Ahmedabad,Gujarat,India,2024-01-10,LOW

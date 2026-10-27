@@ -1,0 +1,7 @@
+branch_id,branch_name,city,state,region
+B01,MG Road,Bengaluru,Karnataka,SOUTH
+B02,Vijayanagar,Mysuru,Karnataka,SOUTH
+B03,Bandra,Mumbai,Maharashtra,WEST
+B04,Marine Drive,Kochi,Kerala,SOUTH
+B05,Connaught Place,Delhi,Delhi,NORTH
+B06,Navrangpura,Ahmedabad,Gujarat,WEST
