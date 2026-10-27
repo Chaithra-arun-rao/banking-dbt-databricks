@@ -1,0 +1,50 @@
+version: 2
+
+models:
+
+  - name: int_customer_accounts
+    description: "Customer and account level banking data."
+
+    columns:
+
+      - name: customer_id
+        data_tests:
+          - not_null
+
+      - name: account_id
+        data_tests:
+          - not_null
+
+
+  - name: int_customer_transactions
+    description: "Customer transactions with signed amount and risk indicator."
+
+    columns:
+
+      - name: transaction_id
+        data_tests:
+          - unique
+          - not_null
+
+      - name: customer_id
+        data_tests:
+          - not_null
+
+      - name: amount
+        data_tests:
+          - not_null
+
+
+  - name: int_customer_loans
+    description: "Customer loans with outstanding percentage and credit risk indicator."
+
+    columns:
+
+      - name: loan_id
+        data_tests:
+          - unique
+          - not_null
+
+      - name: customer_id
+        data_tests:
+          - not_null
